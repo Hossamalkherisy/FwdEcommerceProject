@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="33.906">
+<testcase classname="F01_Register | users could use register functionality to open new accounts" name="user could register with valid fristname and lastname and email and password and confirmPassword" time="3.732">
+<system-out><![CDATA[Given user go to register page..............................................passed
+When user lregister with valid fristname and lastname and email and password and confirmPassword.passed
+And user press on register button...........................................passed
+Then user register to the system successfully...............................passed
+And user logout to login page...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_Login | users could use login functionality to open their accounts" name="user could login with valid email and password" time="1.773">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid email and password...............................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_Search | users will be able to search for products with different parameters" name="user could search for product using fullname" time="1.315">
+<system-out><![CDATA[Given user clicks on search field...........................................passed
+When user search with name of product.......................................passed
+Then user could find relative results.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F05_switch_between_currencies |  Logged User could switch between currencies US-Euro" name="user could switch between currencies" time="1.857">
+<system-out><![CDATA[Given user in home page.....................................................passed
+When user detierment to Euro................................................passed
+Then user switch between currencies US-Euro successfully....................passed
+]]></system-out>
+</testcase>
+</testsuite>
