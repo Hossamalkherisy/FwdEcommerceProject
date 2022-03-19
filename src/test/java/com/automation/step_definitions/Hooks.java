@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 public class Hooks {
-    static   WebDriver driver;
+    public  static   WebDriver driver;
     protected static HomePage homepage;
 
     @BeforeAll
@@ -30,6 +30,6 @@ public class Hooks {
     @AfterAll
     public static void quitdriver() throws InterruptedException {
 
-        //driver.quit();
+      driver.quit();
     }
 }

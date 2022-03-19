@@ -12,10 +12,10 @@ public class registerStepDefinition {
 
     private  String fristname="Hossam";
     private String lastname="Mohammed";
-    public static String usernEmail="test12344@gmail.com";
+    public static String usernEmail="Hossam12345@gmail.com";
     public static String password="hossam12345";
     RegisterPage registerPage;
-    LoginPage loginPage;
+
 
     @Given("user go to register page")
     public void user_go_to_register_page() {
@@ -34,6 +34,7 @@ public class registerStepDefinition {
     @Then("user register to the system successfully")
     public void user_register_to_the_system_successfully() {
         Assert.assertEquals(registerPage.resulteRegister(), "Your registration completed");
+        System.out.println("Hossam----------------"+registerPage.resulteRegister());
     }
     @And("user logout to login page")
     public void user_logout_to_login_page() {

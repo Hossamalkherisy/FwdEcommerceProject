@@ -10,8 +10,8 @@ public class CategoriesPage {
     private WebDriver driver;
     Actions actions;
     private By ElectronicsCategory = By.cssSelector("a[href=\"/electronics\"]");
-    private By ElectronicsSub_Category = By.cssSelector("a[href=\"/camera-photo\"]");
-    private By BooksSub_Category = By.cssSelector("a[href=\"/books\"]");
+    private By ElectronicsSub_Category = By.cssSelector("a[href=\"/cell-phones\"]");
+    private By Books_Category = By.cssSelector("a[href=\"/books\"]");
 
 
     public CategoriesPage(WebDriver driver) {
@@ -25,8 +25,8 @@ public class CategoriesPage {
         actions.moveToElement(driver.findElement(ElectronicsCategory)).moveToElement(driver.findElement(ElectronicsSub_Category)).click().build().perform();
     }
 
-    public void selectCategory() {
-        actions.moveToElement(driver.findElement(BooksSub_Category)).click().build().perform();
+    public void selectCategoryBook() {
+        actions.moveToElement(driver.findElement(Books_Category)).click().build().perform();
     }
 
 }

@@ -1,4 +1,4 @@
-#@smoke
+@smoke12
 Feature: F03_RestPassword | users could use Rest password functionality
 
   Scenario: users could use Rest password with vaild email

@@ -1,4 +1,4 @@
-@smoke
+@smoke12
 Feature: F01_Register | users could use register functionality to open new accounts
 
   Scenario: user could register with valid fristname and lastname and email and password and confirmPassword

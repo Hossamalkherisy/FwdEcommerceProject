@@ -13,7 +13,7 @@ import io.cucumber.testng.CucumberOptions;
                 "junit:target/cukes.xml",
                 "rerun:target/rerun.txt"},
         dryRun = false,
-        tags = "@smoke"
+        tags = "@smoke12"
 )
 
 

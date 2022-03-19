@@ -20,17 +20,41 @@ public class HomePage {
         ClickLink("Register");
         return new RegisterPage(driver);
     }
-    public LoginPage loginPage(){
+    public LoginPage loginPage1(){
         ClickLink("Log in");
         return new LoginPage(driver);
+    }
+    public LoginPageBeforeSearch LoginPageBeforeSearch1(){
+        return new LoginPageBeforeSearch(driver);
     }
     public CurrencePage currencePage1(){
        // ClickLink("Log in");
         return new CurrencePage(driver);
     }
-    public CategoriesPage CategoriesPagep(){
+    public SearchPage SearchPage1(){
         // ClickLink("Log in");
+        return new SearchPage(driver);
+    }
+    public CategoriesPage CategoriesPage1(){
         return new CategoriesPage(driver);
+    }
+    public ShoppingCartPage ShoppingCartPage1(){
+        return new ShoppingCartPage(driver);
+    }
+    public WishListCartPage WishListCartPage1(){
+        return new WishListCartPage(driver);
+    }
+    public CompareListCartPage CompareListCartPage1(){
+        return new CompareListCartPage(driver);
+    }
+    public CheckOutPage CheckOutPage1(){
+        return new CheckOutPage(driver);
+    }
+    public FliterColorPage FliterColorPage1(){
+        return new FliterColorPage(driver);
+    }
+    public ProducTag ProducTag1(){
+        return new ProducTag(driver);
     }
     public RestPasswordPage restPasspage(){
         ClickLink("Forgot password?");

@@ -1,4 +1,4 @@
-@smoke
+@smoke12
 Feature: F05_switch_between_currencies |  Logged User could switch between currencies US-Euro
 
   Scenario: user could switch between currencies

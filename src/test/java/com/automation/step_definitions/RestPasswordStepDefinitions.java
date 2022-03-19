@@ -1,5 +1,6 @@
 package com.automation.step_definitions;
 
+import com.automation.pages.LoginPage;
 import com.automation.pages.RestPasswordPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -10,9 +11,11 @@ import org.testng.Assert;
 public class RestPasswordStepDefinitions {
 
     RestPasswordPage restPasswordPage;
+    //LoginPage loginPage=Hooks.homepage.loginPage1();
    @Given("user go to Rest page")
     public void user_go_to_rest_page() {
-       Hooks.homepage.loginPage();
+     //  loginPage.logOutUser();
+      Hooks.homepage.loginPage1();
        restPasswordPage =Hooks.homepage.restPasspage();
     }
     @When("user rest with valid email")
@@ -25,8 +28,10 @@ public class RestPasswordStepDefinitions {
        restPasswordPage.clickOnBtuuonRest();
     }
     @Then("user rest password successfully")
-    public void user_rest_password_successfully() {
+    public void user_rest_password_successfully() throws InterruptedException {
        Assert.assertEquals(restPasswordPage.getResultfromRest(),"Email with instructions has been sent to you.","incorrect message");
+       System.out.println("Hossam----------------"+restPasswordPage.getResultfromRest());
+       Thread.sleep(3000);
      }
 
 
