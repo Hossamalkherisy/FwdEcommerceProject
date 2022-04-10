@@ -22,6 +22,7 @@ public class RegisterPage {
         this.driver=d;
     }
     public void registerNewUser(String fristName,String lastName ,String email ,String password){
+
         clickButton(driver.findElement(gendermale));
         setTextToField(Fristname,fristName);
         setTextToField(LastName,lastName);

@@ -5,9 +5,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {
+
     private WebDriver driver;
     public JavascriptExecutor jse;
-    // private By registerbtn= By.linkText("Register");
 
     public HomePage(WebDriver driver) {
         this.driver = driver;

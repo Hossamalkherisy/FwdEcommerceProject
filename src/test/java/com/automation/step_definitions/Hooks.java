@@ -27,9 +27,9 @@ public class Hooks {
         homepage=new HomePage(driver);
     }
 
-    @AfterAll
+   // @AfterAll
     public static void quitdriver() throws InterruptedException {
 
-      driver.quit();
+      //driver.quit();
     }
 }
